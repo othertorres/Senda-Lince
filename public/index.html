@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0F172A" />
+    <meta
+      name="description"
+      content="Senda Lince: aprende análisis técnico, prepara tus setups y revisa tus operaciones con criterio."
+    />
+    <title>Senda Lince · Observa, comprende, simplifica</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/favicon.png?v=5.5" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=5.5" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Saltar al contenido</a>
+    <div id="storage-error" class="storage-error" role="alert" hidden></div>
+    <aside class="sidebar">
+      <a class="brand" href="#overview" aria-label="Senda Lince, inicio">
+        <span class="brandmark" aria-hidden="true"><img src="assets/senda-lince-symbol.png?v=5.5" alt="" width="54" height="54" /></span>
+        <span class="brand-name"><span class="brand-first">Senda</span> <span class="brandlight">Lince</span>
+          <small>OBSERVA · COMPRENDE · SIMPLIFICA</small>
+        </span>
+      </a>
+      <div class="navcaption">TU ESPACIO</div>
+      <nav aria-label="Principal">
+        <button data-page="overview">
+          <span data-icon="grid"></span><span>Vista general</span></button
+        ><button data-page="analyze">
+          <span data-icon="sliders"></span><span>Preparar setup</span></button
+        ><button data-page="learn">
+          <span data-icon="book"></span><span>Biblioteca</span></button
+        ><button data-page="journal">
+          <span data-icon="chart"></span><span>Diario</span></button
+        ><button data-page="settings">
+          <span data-icon="settings"></span><span>Ajustes</span>
+        </button>
+      </nav>
+      <div class="sidebar-bottom">
+        <span class="local-dot"></span> Espacio local<small
+          >Tus datos, en este navegador.</small
+        ><button class="text-btn" data-go="settings">
+          Gestionar copias <span>↗</span>
+        </button>
+      </div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <header class="topbar">
+        <div>
+          <span class="mobile-brand"><img src="assets/senda-lince-symbol.png?v=5.5" alt="" width="34" height="34" aria-hidden="true" /><span class="mobile-brandname">Senda <b>Lince</b></span></span
+          ><span class="crumb">WORKSPACE <span>/</span></span
+          ><span id="page-title">Vista general</span>
+        </div>
+        <div class="top-actions">
+          <span class="pill">BETA LOCAL · v5.5</span
+          ><button class="avatar" data-go="settings" aria-label="Abrir ajustes">
+            SL
+          </button>
+        </div>
+      </header>
+      <div class="content">
+        <section id="page-overview" class="page">
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">SENDA LINCE · TRADING CON CRITERIO</p>
+              <h1>Observa mejor.<br /><em>Decide con método.</em></h1>
+              <p class="subtitle">
+                Aprende a interpretar tus herramientas, simplifica tu plan y revisa cada operación.
+              </p>
+            </div>
+            <span id="today" class="date-stamp"></span>
+          </div>
+          <div class="hero-grid">
+            <article class="hero-card">
+              <div class="hero-copy">
+                <span class="pill dark-pill">TU SENDA, TU MÉTODO</span>
+                <h2>Un plan antes.<br />Una revisión después.</h2>
+                <p>
+                  Prepara tu hipótesis, dimensiona el riesgo y aprende de lo que
+                  realmente ocurrió.
+                </p>
+                <button class="btn mint" data-new-setup>
+                  Preparar mi setup <span>↗</span></button
+                ><small>Sin conexión a brokers. Sin señales automáticas.</small>
+              </div>
+              <div class="hero-art" aria-hidden="true">
+                <img class="hero-lynx" src="assets/senda-lince-symbol.png?v=5.5" alt="" width="120" height="120" />
+                <div class="art-top">
+                  <span>PROCESO, NO PREDICCIÓN</span><i></i>
+                </div>
+                <svg viewBox="0 0 360 200">
+                  <defs>
+                    <pattern
+                      id="grid"
+                      width="45"
+                      height="40"
+                      patternUnits="userSpaceOnUse"
+                    >
+                      <path
+                        d="M45 0H0V40"
+                        fill="none"
+                        stroke="#ffffff"
+                        stroke-opacity=".055"
+                      />
+                    </pattern>
+                  </defs>
+                  <rect width="360" height="200" fill="url(#grid)" />
+                  <path
+                    d="M10 157 37 151 62 162 85 133 107 144 130 115 157 124 180 93 209 103 235 74 260 86 292 40 319 56 348 20"
+                    fill="none"
+                    stroke="#22D3EE"
+                    stroke-width="3"
+                  />
+                  <path
+                    d="M10 180C80 180 110 146 165 137S250 113 348 65"
+                    fill="none"
+                    stroke="#A5B4FC"
+                    stroke-width="2"
+                    stroke-dasharray="5 6"
+                  />
+                  <circle
+                    cx="292"
+                    cy="40"
+                    r="7"
+                    fill="#6366F1"
+                    stroke="#0F172A"
+                    stroke-width="7"
+                  />
+                </svg>
+                <div class="art-caption">
+                  <span>01 CONTEXTO</span><span>02 RIESGO</span
+                  ><span>03 REVISIÓN</span>
+                </div>
+                <small>Ilustración conceptual · no es una cotización</small>
+              </div>
+            </article>
+            <article class="card journey">
+              <span class="eyebrow">TU RUTINA</span>
+              <h2>Tres pasos.<br />Un método propio.</h2>
+              <button data-go="learn">
+                <b>01</b
+                ><span
+                  >Entiende la herramienta<small
+                    >Consulta funciones y limitaciones</small
+                  ></span
+                ><span>↗</span></button
+              ><button data-new-setup>
+                <b>02</b
+                ><span
+                  >Escribe tu plan<small
+                    >Contexto, entrada e invalidación</small
+                  ></span
+                ><span>↗</span></button
+              ><button data-go="journal">
+                <b>03</b
+                ><span
+                  >Revisa el resultado<small
+                    >Registra, mide y aprende</small
+                  ></span
+                ><span>↗</span>
+              </button>
+            </article>
+          </div>
+          <div id="overview-metrics" class="metric-grid"></div>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">TU PLAYBOOK</p>
+              <h2>Setups guardados</h2>
+            </div>
+            <button class="text-btn" data-new-setup>Crear setup ↗</button>
+          </div>
+          <div id="saved-list" class="saved-grid"></div>
+          <div class="bottom-note">
+            <span data-icon="shield"></span>
+            <p>
+              <b>Un espacio para pensar, no para predecir.</b> El análisis
+              revisa reglas que tú defines. No lee gráficos ni estima la
+              probabilidad de ganar.
+            </p>
+          </div>
+        </section>
+        <section id="page-analyze" class="page" hidden>
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">CONSTRUYE TU HIPÓTESIS</p>
+              <h1>Prepara con criterio.</h1>
+              <p class="subtitle">
+                Revisa tu estructura antes de poner capital en juego.
+              </p>
+            </div>
+            <button class="btn secondary" id="new-setup">Nuevo setup</button>
+          </div>
+          <section id="revision-banner" class="revision-banner" aria-label="Revisión del setup" hidden>
+            <div class="revision-banner-top">
+              <div><span class="pill" id="revision-version"></span><h2 id="revision-title"></h2><p id="revision-origin" class="muted"></p></div>
+              <button type="button" class="btn secondary" id="show-comparison">Comparar con original</button>
+            </div>
+            <label>¿Qué quieres contrastar?<textarea id="revision-reason" maxlength="600" rows="2" placeholder="Ej. Comprobar si MACD aporta algo distinto a EMA."></textarea></label>
+          </section>
+          <div class="workspace-grid">
+            <form id="setup-form" class="card">
+              <div class="step-heading">
+                <span>01</span>
+                <h2>Contexto y reglas</h2>
+              </div>
+              <label
+                >Nombre del setup<input
+                  id="setup-name"
+                  maxlength="80"
+                  placeholder="Ej. Ruptura tras consolidación"
+                  required
+              /></label>
+              <div class="form-grid">
+                <label>Mercado<select id="market"></select></label
+                ><label>Producto<select id="product"></select></label
+                ><label>Operativa<select id="style"></select></label
+                ><label>Régimen<select id="regime"></select></label
+                ><label>Objetivo del setup<select id="goal"></select></label>
+              </div>
+              <div class="form-grid contextual-fields">
+                <label class="wide">Activo concreto / símbolo
+                  <input id="asset" maxlength="80" placeholder="Ej. AAPL (NASDAQ), BTC/USDT (Binance), EUR/USD spot" autocomplete="off" />
+                </label>
+                <label>Temporalidad de análisis
+                  <select id="analysisTf"></select>
+                </label>
+                <label>Temporalidad de ejecución
+                  <select id="executionTf"></select>
+                </label>
+              </div>
+              <p class="form-note">Identifica el instrumento y los marcos que usas para analizar y ejecutar.</p>
+              <fieldset>
+                <legend>Herramientas <span id="picker-count"></span></legend>
+                <div id="picker" class="picker"></div>
+              </fieldset>
+              <div id="indicator-settings" class="indicator-settings" aria-label="Configuración de los indicadores"></div>
+              <p class="form-note">Cada periodo cuenta velas del marco de ejecución. Opciones basadas en precio de cierre salvo indicación. Elige tu configuración real; no se aplica ninguna por defecto.</p>
+              <label
+                >Condición de entrada<textarea
+                  id="entry-rule"
+                  maxlength="1000"
+                  rows="2"
+                  placeholder="¿Qué tiene que ocurrir antes de entrar?"
+                ></textarea></label
+              ><label
+                >Invalidación y salida<textarea
+                  id="exit-rule"
+                  maxlength="1000"
+                  rows="2"
+                  placeholder="¿Cuándo deja de ser válida tu hipótesis?"
+                ></textarea></label
+              ><label class="checkbox"
+                ><input id="mtf" type="checkbox" />He revisado el marco temporal
+                superior</label
+              ><label
+                >Notas del método<textarea
+                  id="setup-notes"
+                  maxlength="3000"
+                  rows="2"
+                  placeholder="Parámetros, horario, condiciones que evitar…"
+                ></textarea></label
+              ><button class="btn primary full" type="submit">
+                Revisar estructura <span>→</span></button
+              ><small class="form-note" id="draft-status"
+                >El borrador se guarda en este navegador.</small
+              >
+            </form>
+            <div class="stack">
+              <article class="card result-card">
+                <div class="step-heading">
+                  <span>02</span>
+                  <h2>Lectura del setup</h2>
+                </div>
+                <div id="analysis-result" aria-live="polite" tabindex="-1">
+                  <div class="empty">
+                    <span data-icon="sliders"></span>
+                    <h3>Cada herramienta, una función.</h3>
+                    <p>
+                      Completa el contexto y pulsa «Revisar estructura». Verás
+                      qué has definido, qué falta y qué información se repite.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <details class="method-note">
+                <summary>¿Qué mide el porcentaje?</summary>
+                <p>El porcentaje representa criterios de coherencia sin conflicto / criterios aplicables × 100, redondeado. Todos pesan igual. Revisa objetivo, régimen, temporalidades y solapamiento según los parámetros elegidos. Sin datos suficientes aparece pendiente.</p>
+                <p>Un 100% significa que estas reglas no detectan conflictos. No mide probabilidad de ganar ni rentabilidad. Puedes consultar cada criterio y sus límites en el resultado.</p>
+                <button class="text-btn" data-go="settings">Ver metodología</button>
+              </details>
+            </div>
+          </div>
+          <section id="setup-comparison" class="card setup-comparison" aria-labelledby="comparison-title" hidden>
+            <div class="section-heading"><div><p class="eyebrow">ORIGINAL Y REVISIÓN</p><h2 id="comparison-title" tabindex="-1">Qué cambia en tu método</h2></div><button type="button" class="text-btn" id="hide-comparison">Cerrar comparación</button></div>
+            <div id="comparison-body"></div>
+          </section>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">DEL PLAN AL TAMAÑO</p>
+              <h2>Planificador de riesgo</h2>
+            </div>
+            <span class="pill">INTRODUCCIÓN MANUAL</span>
+          </div>
+          <div class="workspace-grid">
+            <form id="risk-form" class="card">
+              <p class="muted">
+                Unidades de acciones o cripto al contado. Todos los importes
+                deben estar en la misma divisa. El cálculo limita el nominal al
+                capital, sin apalancamiento.
+              </p>
+              <div class="form-grid">
+                <label
+                  >Capital disponible<input
+                    name="capital"
+                    type="number"
+                    min="0.01"
+                    step="any"
+                    required
+                    placeholder="10000" /></label
+                ><label
+                  >Riesgo elegido (%)<input
+                    name="riskPct"
+                    type="number"
+                    min="0.0001"
+                    max="100"
+                    step="any"
+                    required
+                    placeholder="1" /></label
+                ><label
+                  >Dirección<select name="side">
+                    <option value="long">Largo · compra</option>
+                    <option value="short">Corto · simulación lineal</option>
+                  </select></label
+                ><label
+                  >Divisa<select name="currency">
+                    <option>EUR</option>
+                    <option>USD</option>
+                    <option>GBP</option>
+                  </select></label
+                ><label
+                  >Precio de entrada<input
+                    name="entry"
+                    type="number"
+                    min="0.00000001"
+                    step="any"
+                    required /></label
+                ><label
+                  >Precio de stop<input
+                    name="stop"
+                    type="number"
+                    min="0.00000001"
+                    step="any"
+                    required /></label
+                ><label
+                  >Precio objetivo<input
+                    name="target"
+                    type="number"
+                    min="0.00000001"
+                    step="any"
+                    required /></label
+                ><label
+                  >Costes totales estimados<input
+                    name="costs"
+                    type="number"
+                    min="0"
+                    step="any"
+                    value="0"
+                    required /></label
+                ><label
+                  >Incremento de unidades<select name="step">
+                    <option value="1">1 · unidades enteras</option>
+                    <option value="0.01">0,01 · fracciones</option>
+                    <option value="0.000001">0,000001 · fracciones</option>
+                  </select></label
+                ><label
+                  >Activo / símbolo<input
+                    name="symbol"
+                    maxlength="32"
+                    required
+                    placeholder="Ej. AAPL"
+                    autocomplete="off"
+                /></label>
+              </div>
+              <button class="btn primary full">
+                Calcular escenario <span>→</span>
+              </button>
+              <p class="form-note">
+                No aplica a lotes de Forex, futuros, opciones ni CFD. Los cortos
+                son simulaciones: no se calcula margen ni préstamo. El stop no
+                garantiza el precio de salida.
+              </p>
+            </form>
+            <article class="card" id="risk-result" aria-live="polite">
+              <div class="empty">
+                <span data-icon="shield"></span>
+                <h3>Define cuánto estás dispuesto a arriesgar.</h3>
+                <p>
+                  Obtén unidades, exposición y beneficio/riesgo después de
+                  costes. No se enviará ninguna orden.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section id="page-learn" class="page" hidden>
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">MENOS INDICADORES. MÁS CRITERIO.</p>
+              <h1>Entiende lo que miras.</h1>
+              <p class="subtitle">
+                40 guías prácticas con ejemplos paso a paso, límites, fuentes y enlaces al revisor.
+              </p>
+            </div>
+          </div>
+          <div class="library-toolbar">
+            <label class="search-label"
+              ><span data-icon="search"></span
+              ><input
+                id="search"
+                type="search"
+                aria-label="Buscar en la biblioteca"
+                placeholder="Busca RSI, volatilidad, Doji…" /></label
+            ><label class="compact-select"
+              >Nivel<select id="learn-mode">
+                <option value="simple">Esencial</option>
+                <option value="advanced">En detalle</option>
+              </select></label
+            >
+          </div>
+          <div class="filter-row" id="filters">
+            <button data-filter="Todos" class="active">Todo</button
+            ><button data-filter="Indicador">Indicadores</button
+            ><button data-filter="Figura">Figuras</button
+            ><button data-filter="Vela">Velas</button
+            ><button data-filter="Favoritos">Favoritos</button>
+          </div>
+          <p id="library-count" class="form-note" role="status"></p>
+          <div id="library" class="library-grid"></div>
+          <div id="library-pagination" hidden><button class="btn secondary" type="button" id="library-more">Ver más fichas ↓</button></div>
+          <article class="card">
+            <p class="eyebrow">VOCABULARIO DE TRADING</p>
+            <h2>Los términos, sin dar nada por sabido.</h2>
+            <p class="muted">Consulta estas definiciones cuando encuentres una palabra nueva.</p>
+            <div id="glossary"></div>
+          </article>
+        </section>
+        <section id="page-journal" class="page" hidden>
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">APRENDE DE TU PROCESO</p>
+              <h1>El diario de tus decisiones.</h1>
+              <p class="subtitle">
+                Registro manual. Las estadísticas usan solo operaciones
+                cerradas del tipo y la divisa elegidos. Los registros anteriores quedan sin clasificar hasta que los edites.
+              </p>
+            </div>
+            <button class="btn primary" id="add-trade">
+              Registrar operación +
+            </button>
+          </div>
+          <div class="journal-controls">
+            <label class="compact-select"
+              >Tipo de historial<select id="journal-mode">
+                <option value="simulated">Simulado</option>
+                <option value="real">Real</option>
+                <option value="legacy">Sin clasificar (anterior)</option>
+              </select></label
+            ><label class="compact-select"
+              >Divisa<select id="journal-currency">
+                <option>EUR</option>
+                <option>USD</option>
+                <option>GBP</option>
+              </select></label
+            ><label class="compact-select"
+              >Estado<select id="journal-filter">
+                <option value="all">Todas</option>
+                <option value="open">Abiertas</option>
+                <option value="closed">Cerradas</option>
+              </select></label
+            ><button class="text-btn" id="csv-export">Exportar CSV ↓</button>
+          </div>
+          <div id="journal-metrics" class="metric-grid"></div>
+          <article class="card curve-card">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">RESULTADO NETO ACUMULADO</p>
+                <h2 id="curve-title">Tu historial seleccionado.</h2>
+              </div>
+              <span class="pill">NO INCLUYE POSICIONES ABIERTAS</span>
+            </div>
+            <div id="equity-curve"></div>
+          </article>
+          <div id="trade-list" class="trade-list"></div>
+        </section>
+        <section id="page-settings" class="page" hidden>
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">A TU MANERA</p>
+              <h1>Tu espacio. Tus datos.</h1>
+              <p class="subtitle">
+                Sin registro ni nube. Guarda una copia antes de cambiar de
+                dispositivo.
+              </p>
+            </div>
+          </div>
+          <div class="workspace-grid">
+            <div class="stack">
+              <article class="card">
+                <h2>Copias y recuperación</h2>
+                <p class="muted">
+                  Exporta setups, favoritos, borrador y operaciones en un único
+                  JSON. Importar sustituye los datos actuales después de validar
+                  la copia.
+                </p>
+                <div class="button-row">
+                  <button class="btn primary" id="export-json">
+                    Exportar datos ↓</button
+                  ><button class="btn secondary" id="import-json">
+                    Importar copia ↑</button
+                  ><input
+                    id="import-file"
+                    type="file"
+                    accept=".json,application/json"
+                    hidden
+                  />
+                </div>
+                <button class="text-btn" id="restore-backup">
+                  Restaurar el guardado anterior
+                </button>
+                <p class="form-note" id="data-summary"></p>
+                <button class="text-btn" id="export-raw">
+                  Descargar almacenamiento original
+                </button>
+              </article>
+              <article class="card">
+                <h2>Preferencias</h2>
+                <label
+                  >Divisa del resumen<select id="default-currency">
+                    <option>EUR</option>
+                    <option>USD</option>
+                    <option>GBP</option>
+                  </select></label
+                >
+                <p class="form-note">
+                  El resumen muestra solo operaciones reales. En el diario puedes consultar por separado las simuladas y las antiguas sin clasificar. Las operaciones conservan su divisa. Nunca sumamos EUR, USD y
+                  GBP ni aplicamos conversiones.
+                </p>
+              </article>
+            </div>
+            <article class="card">
+              <span class="eyebrow">CÓMO FUNCIONA</span>
+              <h2>Lo que ves es lo que calculamos.</h2>
+              <details open>
+                <summary>Análisis de estructura</summary>
+                <p>
+                  El objetivo es común a todo el setup. Cada indicador utiliza configuraciones numéricas elegidas por ti sobre el marco de ejecución. La revisión contrasta objetivo y régimen, orden de marcos, estilo de operativa, herramientas y objetivo, redundancia, volatilidad, fuente de volumen, VWAP de sesión y carga de indicadores.
+                  El anillo indica criterios sin conflicto / criterios aplicables × 100, redondeado. Todos pesan igual. «No aplica» no cuenta; con datos pendientes no hay porcentaje. Dos horizontes se consideran próximos cuando la razón entre el mayor y el menor es ≤ 1,5. Solo se comparan los pares descritos en la metodología de esta versión: no es una correlación estadística.
+                  Las configuraciones anteriores se conservan; si no se pueden interpretar con seguridad, requieren elegir un preset. No calculamos indicadores sobre precios reales ni interpretamos semánticamente las reglas escritas. No hacemos backtesting ni predecimos resultados.
+                </p>
+              </details>
+              <details>
+                <summary>Riesgo y resultados</summary>
+                <p>
+                  Presupuesto = capital × riesgo %. Unidades = mínimo entre
+                  presupuesto neto de costes / distancia al stop y capital neto
+                  de costes / precio de entrada, redondeado hacia abajo al
+                  incremento elegido.
+                </p>
+                <p>
+                  Riesgo inicial = distancia al stop × unidades + costes
+                  estimados. Resultado neto = variación de precio a favor ×
+                  unidades − costes reales totales. R = resultado neto / riesgo
+                  inicial. La caída máxima se mide desde el máximo anterior del
+                  resultado cerrado acumulado; no incluye pérdidas latentes. En una misma fecha, los registros sin hora se sitúan primero; después se usa la hora de registro del cierre, con el ID como desempate. No se conoce la hora de ejecución real.
+                </p>
+              </details>
+              <details>
+                <summary>Privacidad y alcance de esta edición</summary>
+                <p>
+                  Los datos se guardan localmente en este navegador. No se
+                  envían a un servidor ni hay analítica de terceros. El
+                  alojamiento puede mantener sus propios registros de acceso.
+                  Borrar los datos del navegador puede eliminar tu historial.
+                </p>
+                <p>
+                  Esta edición no incluye cuentas, cobros, sincronización,
+                  cotizaciones ni notificaciones de mercado. Es una herramienta
+                  educativa y de registro, no un servicio de ejecución ni
+                  asesoramiento individual.
+                </p>
+              </details>
+              <details>
+                <summary>Fuentes de consulta</summary>
+                <ul class="source-list">
+                  <li>
+                    <a
+                      href="https://www.cmegroup.com/education/courses/trade-and-risk-management/proper-position-size"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >CME Group · dimensionamiento de posición ↗</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.tradingview.com/support/solutions/43000501823-average-true-range-atr/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >TradingView · ATR ↗</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.tradingview.com/support/solutions/43000502338-relative-strength-index-rsi/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >TradingView · RSI ↗</a
+                    >
+                  </li>
+                </ul>
+                <p>
+                  Consultadas el 4 de octubre de 2026. Los avisos de contexto
+                  son criterios educativos, no resultados estadísticamente
+                  validados.
+                </p>
+              </details>
+            </article>
+          </div>
+        </section>
+        <footer>
+          <span>Senda Lince <b>•</b> Observa, comprende, simplifica.</span
+          ><span
+            >Contenido educativo. El trading implica riesgo de pérdida.</span
+          >
+        </footer>
+      </div>
+    </main>
+    <div id="toast" role="status" hidden></div>
+    <dialog id="modal" aria-labelledby="modal-title">
+      <form id="modal-form">
+        <div class="modal-head">
+          <h2 id="modal-title"></h2>
+          <button
+            type="button"
+            class="icon-btn"
+            id="modal-close"
+            aria-label="Cerrar"
+          >
+            ×
+          </button>
+        </div>
+        <div id="modal-body"></div>
+        <p id="modal-error" class="error" role="alert"></p>
+        <div class="button-row">
+          <button class="btn primary" id="modal-submit">Guardar</button
+          ><button type="button" class="btn secondary" id="modal-cancel">
+            Cancelar
+          </button>
+        </div>
+      </form>
+    </dialog>
+    <noscript
+      >Senda Lince necesita JavaScript para calcular y guardar datos.</noscript
+    >
+  </body>
+</html>

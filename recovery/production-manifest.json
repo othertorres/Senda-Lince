@@ -1,0 +1,128 @@
+{
+  "origin": "https://senda-lince.netlify.app/",
+  "captured_at": "2026-10-21T20:15:25.591261+00:00",
+  "scope": "Public entrypoint and recursively referenced runtime assets; not a Netlify deploy export or browser user data.",
+  "response_headers": {
+    "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'",
+    "etag": "\"e7dd41f828216e68e42df47a1d6b7e4c-ssl\"",
+    "permissions-policy": "camera=(), microphone=(), geolocation=()",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY"
+  },
+  "files": [
+    {
+      "path": "assets/apple-touch-icon.png",
+      "url": "https://senda-lince.netlify.app/assets/apple-touch-icon.png?v=5.5",
+      "bytes": 36754,
+      "sha256": "7ee1b55fbaee2278abf79be4b6c402c4a63ba825687f68611252171a352da6c6",
+      "content_type": "image/png"
+    },
+    {
+      "path": "assets/favicon.png",
+      "url": "https://senda-lince.netlify.app/assets/favicon.png?v=5.5",
+      "bytes": 5654,
+      "sha256": "4072494d684f4721587ce8d09885d97d11e1dc468ae946b0804c74d3081d3e41",
+      "content_type": "image/png"
+    },
+    {
+      "path": "assets/icon-192.png",
+      "url": "https://senda-lince.netlify.app/assets/icon-192.png?v=5.5",
+      "bytes": 40715,
+      "sha256": "045002f7b803ce1769726f92f5ab38542dd03b2d3c0d0d2823d867f92e377019",
+      "content_type": "image/png"
+    },
+    {
+      "path": "assets/icon-512.png",
+      "url": "https://senda-lince.netlify.app/assets/icon-512.png?v=5.5",
+      "bytes": 232019,
+      "sha256": "25501c8b1caadc171fab8f70b356bf67be4ff6e77a3c7ce3ab6325f5240c66fd",
+      "content_type": "image/png"
+    },
+    {
+      "path": "assets/senda-lince-symbol.png",
+      "url": "https://senda-lince.netlify.app/assets/senda-lince-symbol.png?v=5.5",
+      "bytes": 232019,
+      "sha256": "25501c8b1caadc171fab8f70b356bf67be4ff6e77a3c7ce3ab6325f5240c66fd",
+      "content_type": "image/png"
+    },
+    {
+      "path": "index.html",
+      "url": "https://senda-lince.netlify.app/",
+      "bytes": 30593,
+      "sha256": "c65f6827d3b26cc94bc0bb22c5fcff2c4325e22b31c0b3b5cfbe3731e65074de",
+      "content_type": "text/html"
+    },
+    {
+      "path": "js/app.js",
+      "url": "https://senda-lince.netlify.app/js/app.js",
+      "bytes": 66220,
+      "sha256": "7f327ca505d3884c45e9550148fc68a100c33dffa8540fddaed9e3067fe372f2",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "js/catalog.js",
+      "url": "https://senda-lince.netlify.app/js/catalog.js",
+      "bytes": 37600,
+      "sha256": "bc82e0cdc884415792ff044c29a9bb0005f1737428bfe3e886991b6ba99aca59",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "js/coherence.js",
+      "url": "https://senda-lince.netlify.app/js/coherence.js",
+      "bytes": 9576,
+      "sha256": "e349b8135f208af3793593ae0b57715e9d783d4362510c9ef66a6e200f91445b",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "js/core.js",
+      "url": "https://senda-lince.netlify.app/js/core.js",
+      "bytes": 23603,
+      "sha256": "0744b8bb561fad6dc75bb70aa97ead6c342fe2c9879cccf91b86a273aa3ee646",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "js/glossary.js",
+      "url": "https://senda-lince.netlify.app/js/glossary.js",
+      "bytes": 1924,
+      "sha256": "25a3db05392da38f619fb924de93ce09e6d1ba38861342d59bb3aa6a30610c3c",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "js/indicator-presets.js",
+      "url": "https://senda-lince.netlify.app/js/indicator-presets.js",
+      "bytes": 4562,
+      "sha256": "816fa902ccef50de404f5e985b3d0b1702ea4a5a001711a3df60767dd82f752a",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "js/lessons.js",
+      "url": "https://senda-lince.netlify.app/js/lessons.js",
+      "bytes": 32589,
+      "sha256": "10ea4db9e3d01d6235a3a98a0065a69619651afc6f3bf79a0f780ea019b80ba7",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "js/reviewer.js",
+      "url": "https://senda-lince.netlify.app/js/reviewer.js",
+      "bytes": 7664,
+      "sha256": "c0c3ea84c11fa7e9381f89d6c9aeef4f5e044f91cceec1a2d85f4822b6554425",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "url": "https://senda-lince.netlify.app/manifest.webmanifest",
+      "bytes": 524,
+      "sha256": "c101626e32e6682f7ac98743f72beb3fb118dec44826048a8044ba877ecb5119",
+      "content_type": "application/octet-stream"
+    },
+    {
+      "path": "styles.css",
+      "url": "https://senda-lince.netlify.app/styles.css",
+      "bytes": 45561,
+      "sha256": "7adbc749915554de35bd9ba6d1c343302cd0c7150684964726a905a435e9a34b",
+      "content_type": "text/css"
+    }
+  ]
+}
